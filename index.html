@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Consolacion College Novaliches</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/en/3/3b/La_Consolacion_College_Novaliches.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-900">
+
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo-link">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/La_Consolacion_College_Novaliches.png" alt="LCC Novaliches Logo" class="logo-img">
+                <span class="logo-text">La Consolacion College Novaliches</span>
+            </a>
+            <div id="nav-desktop" class="nav-desktop">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#campus" class="nav-link">Campus Life</a>
+                <a href="#academics" class="nav-link">Academics</a>
+                <a href="#team" class="nav-link">Our Team</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#videos" class="nav-link">Videos</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#" class="nav-contact-btn">Enroll Now</a>
+            </div>
+            <button id="nav-mobile-btn" class="nav-mobile-btn" aria-label="Open Menu">
+                <i class="fas fa-bars w-6 h-6"></i>
+            </button>
+        </nav>
+        <div id="nav-mobile" class="nav-mobile hidden">
+            <a href="#about" class="nav-mobile-link">About</a>
+            <a href="#services" class="nav-mobile-link">Services</a>
+            <a href="#campus" class="nav-mobile-link">Campus Life</a>
+            <a href="#academics" class="nav-mobile-link">Academics</a>
+            <a href="#team" class="nav-mobile-link">Our Team</a>
+            <a href="#news" class="nav-mobile-link">News</a>
+            <a href="#videos" class="nav-mobile-link">Videos</a>
+            <a href="#contact" class="nav-mobile-link">Contact</a>
+            <a href="#" class="nav-mobile-contact-btn">Enroll Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in-up">La Consolacion College</h1>
+                <p class="hero-subtitle fade-in-up" style="transition-delay: 150ms;">One of the 21 schools administered by the Augustinian Sisters of Our Lady of Consolation</p>
+                <p class="hero-tagline fade-in-up" style="transition-delay: 300ms;">We Build A Community of Friends As We Pursue Holistic and Quality Education.</p>
+                <!-- Enroll Now button removed -->
+            </div>
+        </section>
+
+        <section id="about" class="sec">
+            <div class="sec-container">
+                <div class="sec-content fade-in-up">
+                    <p class="sec-subtitle">We welcome you</p>
+                    <h2 class="sec-title">Learn More About Us</h2>
+                    
+                    <div class="tabs-container">
+                        <button data-tab="history" class="tab-btn active">
+                            Our History
+                        </button>
+                        <button data-tab="president" class="tab-btn">
+                            Message from the President
+                        </button>
+                         <button data-tab="mission" class="tab-btn">
+                            Mission
+                        </button>
+                         <button data-tab="vision" class="tab-btn">
+                            Vision
+                        </button>
+                    </div>
+
+                    <div>
+                        <div id="history-content" class="tab-content active">
+                            <div class="card-content">
+                                <h3 class="card-title">Our History</h3>
+                                <p class="card-text-group">
+                                    La Consolacion College Novaliches (LCCN), formerly La Consolacion College - Deparo, is one of 24 esteemed institutions administered by the Augustinian Sisters of Our Lady of Consolation (ASOLC). Established in February 1995, we proudly stand as the first Catholic educational institution in the area. Our name was updated to better represent our community and mission in the heart of Novaliches. As a member of the Inter-School Basketball and Volleyball League (ISBVL), we champion both academic and athletic excellence.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="president-content" class="tab-content">
+                            <div class="card-content">
+                                <h3 class="card-title">A Message of Hope and Progress</h3>
+                                <div class="card-text-group">
+                                    <p>Warmest greetings of peace and love to the entire LCC Novaliches community.</p>
+                                    <p>As we navigate the challenges of the 21st century, we continue to draw strength from our core values of Truth, Unity, and Charity. Our mission is to provide a holistic formation for our youth, inspired by the virtues of Mary, Our Lady of Consolation.</p>
+                                    <p>We are committed to re-inventing the future of education while honoring our venerable traditions. We journey forward with our dedicated personnel and supportive families, fostering an environment where every student can thrive. Together, we strive to have "one heart and one mind on the way to God."</p>
+                                    <p>To our current and future LCCians, let us continue to "act justly, love tenderly, and walk humbly with our God" in all our endeavors. Mabuhay ang LCC Novaliches!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="mission-content" class="tab-content">
+                            <div class="card-content">
+                                <h3 class="card-title">Our Mission</h3>
+                                <p class="card-text-group">
+                                    We commit the LCCN to live a Christ-like life, work towards a holistic transformation of the community and render loving/enduring service as we respond to the call of the times.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="vision-content" class="tab-content">
+                            <div class="card-content">
+                                <h3 class="card-title">Our Vision</h3>
+                                <p class="card-text-group">
+                                    We envision the LCCN to become Evangelizers in persuit of a Christian Quality Education rooted to the Charism of Mother Rita Barcelo and Mother Consuelo Barcelo Y Pages and in the spirit of St.Augustine
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="sec bg-gray-50">
+            <div class="sec-container">
+                <h2 class="sec-title fade-in-up">Comprehensive Student Services</h2>
+                <div class="grid-3">
+                    <div class="card fade-in-up">
+                        <div class="card-body">
+                            <div class="card-icon-wrapper-blue">
+                                <i class="fa-solid fa-user-graduate text-3xl"></i>
+                            </div>
+                            <h3 class="card-title-blue">Academic Advising</h3>
+                            <p class="card-text">Personalized guidance to help students navigate their academic journey, from course selection to career planning.</p>
+                        </div>
+                    </div>
+                    <div class="card fade-in-up" style="transition-delay: 150ms;">
+                        <div class="card-body">
+                             <div class="card-icon-wrapper-green">
+                                <i class="fa-solid fa-book-open-reader text-3xl"></i>
+                             </div>
+                            <h3 class="card-title-blue">Library & E-Resources</h3>
+                            <p class="card-text">Access a vast collection of books, journals, and digital resources to support cutting-edge research and learning.</p>
+                        </div>
+                    </div>
+                    <div class="card fade-in-up" style="transition-delay: 300ms;">
+                        <div class="card-body">
+                             <div class="card-icon-wrapper-red">
+                                <i class="fa-solid fa-heart-pulse text-3xl"></i>
+                             </div>
+                            <h3 class="card-title-blue">Health & Wellness</h3>
+                            <p class="card-text">On-campus medical services, counseling, and wellness programs to ensure a healthy and balanced student life.</p>
+                        </div>
+                    </div>
+                    <div class="card fade-in-up" style="transition-delay: 450ms;">
+                        <div class="card-body">
+                             <div class="card-icon-wrapper-purple">
+                                <i class="fa-solid fa-globe text-3xl"></i>
+                             </div>
+                            <h3 class="card-title-blue">International Student Support</h3>
+                            <p class="card-text">Specialized guidance for international students, cultural orientation and integration activities.</p>
+                        </div>
+                    </div>
+                    <div class="card fade-in-up" style="transition-delay: 600ms;">
+                        <div class="card-body">
+                             <div class="card-icon-wrapper-orange">
+                                <i class="fa-solid fa-brain text-3xl"></i>
+                             </div>
+                            <h3 class="card-title-blue">Mental Health & Counseling</h3>
+                            <p class="card-text">Confidential counseling services and mental wellness programs to help students deal with stress, anxiety, and personal challenges.</p>
+                        </div>
+                    </div>
+                    <div class="card fade-in-up" style="transition-delay: 750ms;">
+                        <div class="card-body">
+                             <div class="card-icon-wrapper-teal">
+                                <i class="fa-solid fa-users text-3xl"></i>
+                             </div>
+                            <h3 class="card-title-blue">Student Life & Organizations</h3>
+                            <p class="card-text">Discover events and organizations to build friendships, develop leadership skills, and enjoy student life beyond academics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="campus" class="sec">
+            <div class="sec-container">
+                <h2 class="sec-title fade-in-up">Campus Life & Facilities</h2>
+                 <div class="grid-3">
+                    <div class="card fade-in-up">
+                        <img src="https://cloud-1de12d.b-cdn.net/media/iW=584&iH=584&oX=24&oY=24&cW=536&cH=536/e7f2c5e56e11e6e599ae5b0ca3570ce5/image.jpg" alt="Parent-Teacher Conference" class="card-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="card-title-blue">Parent-Teacher Conferences</h3>
+                            <p class="card-text">Fostering strong partnerships between parents and teachers for student success.</p>
+                        </div>
+                    </div>
+                    <div class="card fade-in-up" style="transition-delay: 150ms;">
+                        <img src="https://www.lcup.edu.ph/images/Gallery/Pharmacology-Laboratory/Pharmacology-Laboratory-8.jpg" alt="Science Laboratories" class="card-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="card-title-blue">Science Laboratories</h3>
+                            <p class="card-text">State-of-the-art labs for hands-on experience and discovery.</p>
+                        </div>
+                    </div>
+                    <div class="card fade-in-up" style="transition-delay: 300ms;">
+                        <img src="https://cloud-1de12d.b-cdn.net/media/iW=583&iH=436&oX=0&oY=0&cW=583&cH=436/d1034c623056659fac590899d12d02a2/image.jpg" alt="Gymnasium" class="card-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="card-title-blue">Gymnasium</h3>
+                            <p class="card-text">A multi-purpose gymnasium for sports, events, and school assemblies.</p>
+                        </div>
+                    </div>
+                    <div class="card fade-in-up" style="transition-delay: 450ms;">
+                        <img src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/491588655_1216390827163092_3252667300441028272_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFMDGZ0Hr00hH2FNitZq2M6z6d00iYNJWfPp3TSJg0lZ4719W94vHmARB29DRIrftw6iqkehjOfvIyx2h5RxBrZ&_nc_ohc=rsBD75Uh0OsQ7kNvwGcBvc1&_nc_oc=AdmnBpLeCUKGxzbpIjxX9LBtXo6QM2OkC6jIDaz8SZNEe7rAa_o_gzOlTSEcH__PlpjFsvCaoxrGvOagZMcYCDdr&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=1vxYisLb0yVheZeRviri1A&oh=00_AfM9Sap3r9FqbDAXwinKkpHg6jKiGIOgX1Q1XV0sFBmEJw&oe=68617157" alt="Religious-Friendly School" class="card-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="card-title-blue">Faith-Centered Education</h3>
+                            <p class="card-text">Nurturing spiritual growth within a supportive, religious-friendly environment for all students.</p>
+                        </div>
+                    </div>
+                    <div class="card fade-in-up" style="transition-delay: 600ms;">
+                        <img src="https://cloud-1de12d.b-cdn.net/media/iW=584&iH=583&oX=24&oY=24&cW=536&cH=535/e45eb8755929813623bbec7de55ffe8d/image.jpg" alt="Eco-Friendly Events" class="card-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="card-title-blue">Eco-Friendly Campus</h3>
+                            <p class="card-text">Promoting sustainability through green initiatives and eco-friendly events.</p>
+                        </div>
+                    </div>
+                     <div class="card fade-in-up" style="transition-delay: 750ms;">
+                        <img src="https://cloud-1de12d.b-cdn.net/media/iW=584&iH=584&oX=24&oY=24&cW=536&cH=536/fbc54f3477a8ff3e22734d672b881564/image.jpg" alt="Seminars and Workshops" class="card-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="card-title-blue">Seminars & Workshops</h3>
+                            <p class="card-text">Engaging seminars and workshops to enhance learning and professional development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="academics" class="sec bg-gray-50">
+            <div class="sec-container">
+                <h2 class="sec-title fade-in-up">Academics</h2>
+        
+                <div class="mb-20">
+                    <h3 class="sub-title fade-in-up">Senior High School Strands</h3>
+                    <p class="text-blue-600 -mt-8 mb-12 text-center">Click a strand to explore details & career opportunities.</p>
+                    <div class="grid-5">
+                        <div class="card p-6 text-center fade-in-up strand-card" data-strand="STEM">
+                            <div class="card-popup-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            <h4 class="card-title-blue mb-2">STEM</h4>
+                            <p class="card-text text-sm">Science, Technology, Engineering, & Mathematics</p>
+                        </div>
+                        <div class="card p-6 text-center fade-in-up strand-card" style="transition-delay: 100ms;" data-strand="ABM">
+                            <div class="card-popup-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            <h4 class="card-title-blue mb-2">ABM</h4>
+                            <p class="card-text text-sm">Accountancy, Business, & Management</p>
+                        </div>
+                        <div class="card p-6 text-center fade-in-up strand-card" style="transition-delay: 200ms;" data-strand="HUMSS">
+                            <div class="card-popup-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            <h4 class="card-title-blue mb-2">HUMSS</h4>
+                            <p class="card-text text-sm">Humanities & Social Sciences</p>
+                        </div>
+                        <div class="card p-6 text-center fade-in-up strand-card" style="transition-delay: 300ms;" data-strand="HE">
+                            <div class="card-popup-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            <h4 class="card-title-blue mb-2">HE</h4>
+                            <p class="card-text text-sm">Home Economics</p>
+                        </div>
+                        <div class="card p-6 text-center fade-in-up strand-card" style="transition-delay: 400ms;" data-strand="ICT">
+                            <div class="card-popup-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            <h4 class="card-title-blue mb-2">ICT</h4>
+                            <p class="card-text text-sm">Information & Communications Technology</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div>
+                    <h3 class="sub-title fade-in-up">College Programs Offered</h3>
+                    <p class="text-blue-600 -mt-8 mb-12 text-center">Click a program to explore details & career opportunities.</p>
+                    <div class="grid-4">
+                        <div class="card p-8 fade-in-up program-card" data-program="Education">
+                            <div class="card-popup-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            <div class="card-icon-wrapper-purple">
+                                <i class="fa-solid fa-chalkboard-user text-3xl"></i>
+                            </div>
+                            <h4 class="card-title-blue mb-3">Education</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Bachelor in Elementary Education (BEED)</li>
+                                <li>Bachelor in Secondary Education (BSED)
+                                    <ul class="list-['-_'] list-inside ml-4 mt-1 text-sm text-gray-500">
+                                        <li>Major in English</li>
+                                        <li>Major in Mathematics</li>
+                                        <li>Major in Filipino</li>
+                                        <li>Major in Values Education</li>
+                                    </ul>
+                                </li>
+                                <li>Certificate in Teaching</li>
+                            </ul>
+                        </div>
+        
+                        <div class="card p-8 fade-in-up program-card" style="transition-delay: 150ms;" data-program="Business">
+                            <div class="card-popup-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            <div class="card-icon-wrapper-orange">
+                                <i class="fa-solid fa-briefcase text-3xl"></i>
+                            </div>
+                            <h4 class="card-title-blue mb-3">Business Administration (BSBA)</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                 <li>Major in Marketing Management</li>
+                                 <li>Major in Human Resource Development Management</li>
+                                 <li>Major in Financial Management</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card p-8 fade-in-up program-card" style="transition-delay: 300ms;" data-program="Hospitality">
+                            <div class="card-popup-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            <div class="card-icon-wrapper-teal">
+                                <i class="fa-solid fa-utensils text-3xl"></i>
+                            </div>
+                            <h4 class="card-title-blue mb-3">Hospitality & Tourism</h4>
+                             <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Bachelor of Science in Hospitality Management (BSHM)</li>
+                                <li>Bachelor of Science in Tourism Management (BSTM)</li>
+                            </ul>
+                        </div>
+
+                        <div class="card p-8 fade-in-up program-card" style="transition-delay: 450ms;" data-program="Technology">
+                            <div class="card-popup-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            <div class="card-icon-wrapper-sky">
+                                <i class="fa-solid fa-computer text-3xl"></i>
+                            </div>
+                            <h4 class="card-title-blue mb-3">Technology</h4>
+                             <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Bachelor of Science in Information Technology (BSIT)</li>
+                                <li>Bachelor of Science in Computer Science (BSCS)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="sec bg-white">
+            <div class="sec-container">
+                <h2 class="sec-title fade-in-up">Meet Our Leadership Team</h2>
+                <p class="sec-tagline fade-in-up">Dedicated leaders guiding our students towards a brighter future.</p>
+
+                <div id="team-slider" class="slider fade-in-up">
+                    <div class="slider-wrapper">
+                        <div class="slider-item active">
+                            <img src="images\sister-angelita.png" alt="College President" class="slider-img">
+                            <div class="slider-text">
+                                <h3 class="slider-title">Sr. Angelita M. Baraero, O.S.A.</h3>
+                                <p class="slider-subtitle text-blue-500">School President</p>
+                                <p class="slider-desc">With a vision for transformative education, Sr. Baraero leads our institution with unwavering dedication, fostering an environment of academic excellence and spiritual growth.</p>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="https://placehold.co/400x400/3498db/ffffff?text=Principal" alt="Principal" class="slider-img">
+                            <div class="slider-text">
+                                <h3 class="slider-title"></h3>
+                                <p class="slider-subtitle text-green-500">Principal</p>
+                                <p class="slider-desc">Our dear principal leads the academic faculty with a focus on student-centered learning and curriculum development, ensuring a high standard of education for all.</p>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="images\cielo.jpg" alt="Dean of Student Affairs" class="slider-img">
+                            <div class="slider-text">
+                                <h3 class="slider-title">Dr. Cielo Oballes </h3>
+                                <p class="slider-subtitle text-red-500">Dean of Student Affairs</p>
+                                <p class="slider-desc">Dr. Cielo is dedicated to the holistic development of our students, managing campus activities, student organizations, and support services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-controls">
+                         <button id="team-slider-prev" class="slider-btn" aria-label="Previous Slide">
+                            <i class="fa-solid fa-chevron-left text-blue-600 h-6 w-6"></i>
+                        </button>
+                        <div class="slider-dots">
+                            <button class="slider-dot active" data-slide-to="0" aria-label="Go to slide 1"></button>
+                            <button class="slider-dot" data-slide-to="1" aria-label="Go to slide 2"></button>
+                            <button class="slider-dot" data-slide-to="2" aria-label="Go to slide 3"></button>
+                        </div>
+                        <button id="team-slider-next" class="slider-btn" aria-label="Next Slide">
+                            <i class="fa-solid fa-chevron-right text-blue-600 h-6 w-6"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="sec bg-gray-50">
+            <div class="sec-container">
+                <h2 class="sec-title fade-in-up">LCCN News</h2>
+                <div class="grid-3">
+                    <div class="card fade-in-up">
+                        <a href="https://www.facebook.com/share/p/1ACbUTzmbJ/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/512681832_122171296568518466_3431109212990928030_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHftm45ybKt2r6eLpUQzAkST65mltloU0VPrmaW2WhTRR_eFlBlzSSgCmjCuSEjNBTp__kqPrMU3InZRSTplAqZ&_nc_ohc=REq4kz_4O0cQ7kNvwGrHHeg&_nc_oc=AdlIBdEhCJfwTxr-uGk0GG2D7g6HnG5DVci6r1J5ij3xDRPoHz1lg9Q1uCC8dNiMCHASZC5YTPjUOzwol103hCdY&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&_nc_gid=In486jnQblbYv_FrSBJH2g&oh=00_AfO2teuE2gWp-j2J7_FbDiaQXyrom82CDDG4RuZeqrJYtQ&oe=6861593F" alt="Enrollment for SY 2025-2026" class="card-img">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="card-title-blue">Enrollment is Open for S.Y. 2025-2026</h3>
+                            <p class="card-text">Be part of the LCCian community! Enrollment is now ongoing for the upcoming school year. Secure your future with us and experience quality Catholic education.</p>
+                        </div>
+                    </div>
+                     <div class="card fade-in-up" style="transition-delay: 150ms;">
+                        <a href="https://www.facebook.com/share/p/1Awe17PS7a/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/508521731_1268566971945477_3471122631165694846_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF4IlaAfE3ObrEwLdhlfE7ZvmvJq7vC71O-a8mru8LvUzzZVz3v2PJtX9tujx9cDdxOoCPd6KS3pEICKmnviRDN&_nc_ohc=z51bkPjEXc4Q7kNvwGvGAO0&_nc_oc=AdnZr1CdhxMRcfIsdLbEhw78cPadrhwmsX39j_4hDggaVyFn-g2R90JDp1bAgeiZ-WhEWSK_Ogrl-RhL-X8Xmsmv&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&_nc_gid=_RUBz-BlYWJtWO10wm0ReA&oh=00_AfOmJKu7ARISpJBxhpXipjff199qTaGLX-hhFlpDU0ogxQ&oe=68615289" alt="LCCN Welcomes New President" class="card-img">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="card-title-blue">LCCN Welcomes New President</h3>
+                            <p class="card-text">The LCCN community warmly welcomes SR. ANGELITA M. BARAERO, OSA as the new school President for S.Y. 2025-2026. We look forward to journeying with her.</p>
+                        </div>
+                    </div>
+                     <div class="card fade-in-up" style="transition-delay: 300ms;">
+                        <a href="https://www.facebook.com/share/p/1Awe17PS7a/" target="_blank" rel="noopener noreferrer">
+                           <img src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/508867829_1268567058612135_6789811284662232987_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHYng16-YQkC9IKx-fNmUa1nuFtT76dNcee4W1Pvp01x2lGqqxifX35AVEB9l1zSBY3nh-3bJ2YIJ4LhqaUZFVo&_nc_ohc=8-LStHMBXV4Q7kNvwFOHNsM&_nc_oc=AdkVKTJSaWv7cOkmnivGOg8vRvxPZTFI6WjVrl_qfDYkEBxgTRnsS9YLvlUIBwT3DBfe5zr00c5quxuaOO_7UMHO&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=17c32QvaakHBPfhQEb3eTw&oh=00_AfNesoP9H9FyRBcWwsVtNAe4wCZshxd86cEZkLNb4nbp3w&oe=6861367A" alt="Thank You, Sr. Ana Isabel V. Marcelo, OSA" class="card-img">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="card-title-blue">Thank You, Sr. Ana Isabel!</h3>
+                            <p class="card-text">We express our profound gratitude to SR. ANA ISABEL V. MARCELO, OSA for her unwavering leadership and commitment over the past five years, which have shaped the LCCN of today.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="sec bg-white">
+            <div class="sec-container">
+                <h2 class="sec-title fade-in-up">Watch Our Videos</h2>
+                <div class="grid-2">
+                    <div class="card fade-in-up">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/4U6HoZvgu-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="card-title-blue">Agustino ako</h3>
+                            <p class="card-text">Augustinian Vocation Jamboree</p>
+                        </div>
+                    </div>
+                    <div class="card fade-in-up" style="transition-delay: 150ms;">
+                        <div class="video-wrapper">
+                           <iframe src="https://www.youtube.com/embed/ay826qLXHW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="card-title-blue">29th Founding Anniversary Highlight</h3>
+                            <p class="card-text">Relive the memorable moments from our 29th Founding Anniversary celebration. A showcase of talent, community, and Augustinian spirit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact-sec">
+            <div class="sec-container fade-in-up">
+                 <h2 class="contact-title">Get in Touch</h2>
+                 <div class="contact-wrapper">
+                      <div>
+                          <h3 class="contact-subtitle">Contact Information</h3>
+                          <div class="contact-info">
+                               <p><i class="fa-solid fa-phone w-6"></i> <strong>Telephone:</strong> <span class="copy-target" data-copy-text="8287-1013 / 8289-6156">8287-1013 / 8289-6156</span><span class="copy-message"></span></p>
+                               <p><i class="fa-solid fa-mobile-screen-button w-6"></i> <strong>Cellphone:</strong> <span class="copy-target" data-copy-text="0966-549-4493">0966-549-4493</span><span class="copy-message"></span></p>
+                               <p><i class="fa-solid fa-envelope w-6"></i> <strong>Email:</strong> <span class="copy-target" data-copy-text="lacoco_rdo@yahoo.com.ph">lacoco_rdo@yahoo.com.ph</span><span class="copy-message"></span></p>
+                                <p><i class="fa-solid fa-location-dot w-6"></i> <strong>Address:</strong> 
+                                   <a href="https://www.google.com/maps/dir/?api=1&destination=14.743519370022%2C121.02745056152" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                                        St. Peter St. Villa Maria Subd., Deparo, Novaliches, Caloocan, Philippines
+                                   </a>
+                               </p>
+                          </div>
+                      </div>
+                      <div>
+                          <h3 class="contact-subtitle">School Hours</h3>
+                          <div class="contact-hours">
+                                <div class="hour-row"><span>Monday</span><span class="dots"></span><span>8:00 AM - 5:00 PM</span></div>
+                                <div class="hour-row"><span>Tuesday</span><span class="dots"></span><span>8:00 AM - 5:00 PM</span></div>
+                                <div class="hour-row"><span>Wednesday</span><span class="dots"></span><span>8:00 AM - 5:00 PM</span></div>
+                                <div class="hour-row"><span>Thursday</span><span class="dots"></span><span>8:00 AM - 5:00 PM</span></div>
+                                <div class="hour-row"><span>Friday</span><span class="dots"></span><span>8:00 AM - 5:00 PM</span></div>
+                                <div class="hour-row"><span>Saturday</span><span class="dots"></span><span>8:00 AM - 12:00 PM</span></div>
+                                <div class="hour-row"><span>Sunday</span><span class="dots"></span><span>CLOSED</span></div>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="contact-social">
+                     <div>
+                         <a href="https://www.facebook.com/share/196Pg1jWn7/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page" class="social-link">
+                             <i class="fab fa-facebook text-4xl"></i>
+                         </a>
+                     </div>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h3 class="footer-title">Our Sister Schools</h3>
+            <div class="footer-grid">
+                <p>La Consolacion University Philippines</p>
+                <p>La Consolacion College Manila</p>
+                <p>La Consolacion College Bacolod</p>
+                <p>La Consolacion College Baao</p>
+                <p>La Consolacion College Biñan</p>
+                <p>La Consolacion College Daet</p>
+                <p>La Consolacion College Iriga</p>
+                <p>La Consolacion College Novaliches</p>
+                <p>La Consolacion College Caloocan</p>
+                <p>La Consolacion College Bais</p>
+                <p>La Consolacion College La Carlota</p>
+                <p>La Consolacion College Liloan</p>
+                <p>La Consolacion College Murcia</p>
+                <p>La Consolacion College Pasig</p>
+                <p>La Consolacion College Tanauan</p>
+                <p>La Consolacion College Valenzuela</p>
+                <p>La Consolacion College Isabela</p>
+                <p>La Consolacion School of Balagtas</p>
+                <p>La Consolacion School – Gardenville</p>
+            </div>
+            <p class="footer-copyright">© 2024 La Consolacion College Novaliches. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="strand-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="modal-close-btn" class="modal-close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="modal-body" class="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

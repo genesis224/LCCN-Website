@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | La Consolacion College Novaliches</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/en/3/3b/La_Consolacion_College_Novaliches.png">
+    
+    <!-- Google Fonts and Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="admin-login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/La_Consolacion_College_Novaliches.png" alt="LCC Novaliches Logo" class="logo-img">
+                <h1 class="login-title">Admin Panel</h1>
+                <p class="login-subtitle">La Consolacion College Novaliches</p>
+            </div>
+
+            <form id="login-form" class="login-form">
+                <div id="error-message" class="error-message"></div>
+                <div class="form-group">
+                    <label for="username" class="form-label"><i class="fas fa-user form-icon"></i>Username</label>
+                    <input type="text" id="username" class="form-input" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label"><i class="fas fa-lock form-icon"></i>Password</label>
+                    <input type="password" id="password" class="form-input" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+             <div class="login-footer">
+                <a href="index.html" class="back-to-site-link">
+                    <i class="fas fa-arrow-left"></i> Back to Main Site
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to the JS file -->
+    <script src="admin-login.js"></script>
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCCN Admin Dashboard</title>
+    <!-- Google Fonts and Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/La_Consolacion_College_Novaliches.png" alt="LCC Novaliches Logo" class="sidebar-logo">
+                <span class="sidebar-title">LCCN Admin</span>
+            </div>
+            <nav id="sidebar-nav" class="sidebar-nav">
+                <a href="#dashboard" class="nav-item active">
+                    <i class="fas fa-tachometer-alt fa-fw nav-icon"></i>
+                    Dashboard
+                </a>
+                <a href="#news" class="nav-item">
+                    <i class="fas fa-newspaper fa-fw nav-icon"></i>
+                    News Articles
+                </a>
+                <a href="#team" class="nav-item">
+                    <i class="fas fa-users fa-fw nav-icon"></i>
+                    Leadership Team
+                </a>
+                <a href="#academics" class="nav-item">
+                    <i class="fas fa-graduation-cap fa-fw nav-icon"></i>
+                    Academics
+                </a>
+                <a href="#campus-life" class="nav-item">
+                     <i class="fas fa-school fa-fw nav-icon"></i>
+                    Campus Life
+                </a>
+                <a href="#services" class="nav-item">
+                    <i class="fas fa-concierge-bell fa-fw nav-icon"></i>
+                    Services
+                </a>
+                <a href="#settings" class="nav-item">
+                    <i class="fas fa-cog fa-fw nav-icon"></i>
+                    Site Settings
+                </a>
+                <a href="#" class="nav-item nav-item-logout">
+                    <i class="fas fa-sign-out-alt fa-fw nav-icon"></i>
+                    Logout
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-wrapper">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="header-left">
+                     <button id="menu-button" class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 id="header-title" class="header-title">Dashboard</h1>
+                </div>
+                <div class="user-profile">
+                    <span class="user-name">Admin User</span>
+                    <img class="user-avatar" src="https://placehold.co/100x100/e2e8f0/333333?text=A" alt="Admin Avatar">
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <main class="content-area">
+                <div class="container">
+                    <!-- Dashboard Page -->
+                    <div data-page="dashboard" class="page-content active">
+                        <h2 class="page-title">Overview</h2>
+                        <div class="overview-grid">
+                            <div class="stat-card">
+                                <i class="fas fa-newspaper stat-card-icon icon-blue"></i>
+                                <div class="stat-card-info">
+                                    <p class="stat-card-number">3</p>
+                                    <p class="stat-card-label">News Articles</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-users stat-card-icon icon-green"></i>
+                                <div class="stat-card-info">
+                                    <p class="stat-card-number">3</p>
+                                    <p class="stat-card-label">Team Members</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-graduation-cap stat-card-icon icon-purple"></i>
+                                <div class="stat-card-info">
+                                    <p class="stat-card-number">9</p>
+                                    <p class="stat-card-label">Academic Programs</p>
+                                </div>
+                            </div>
+                             <div class="stat-card">
+                                <i class="fas fa-concierge-bell stat-card-icon icon-yellow"></i>
+                                <div class="stat-card-info">
+                                    <p class="stat-card-number">6</p>
+                                    <p class="stat-card-label">Services Offered</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News Page -->
+                    <div data-page="news" class="page-content">
+                        <div class="page-header">
+                            <h2 class="page-title">Manage News Articles</h2>
+                            <button id="add-article-btn" class="btn btn-primary">
+                                <i class="fas fa-plus btn-icon"></i> Add New Article
+                            </button>
+                        </div>
+                        <div class="table-container">
+                             <table class="content-table">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Date Published</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="news-list">
+                                    <tr>
+                                        <td>Enrollment is Open for S.Y. 2025-2026</td>
+                                        <td>June 20, 2024</td>
+                                        <td><span class="status-badge status-published"></span></td>
+                                        <td class="action-links">
+                                            <a href="#" class="edit-article" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                            <a href="#" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>LCCN Welcomes New President</td>
+                                        <td>June 18, 2024</td>
+                                        <td><span class="status-badge status-published"></span></td>
+                                        <td class="action-links">
+                                            <a href="#" class="edit-article" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                            <a href="#" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Team Page -->
+                    <div data-page="team" class="page-content">
+                         <div class="page-header">
+                            <h2 class="page-title">Manage Leadership Team</h2>
+                            <button id="add-member-btn" class="btn btn-primary">
+                                <i class="fas fa-plus btn-icon"></i> Add New Member
+                            </button>
+                        </div>
+                        <div id="team-list" class="card-grid">
+                            <div class="card">
+                                <div style="position: absolute; top: 1rem; right: 1rem; display: flex; gap: 0.5rem;">
+                                    <button class="btn-edit btn-edit-member" title="Edit Member"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="btn-delete btn-delete-member" title="Delete Member"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                                <h3 class="card-header">Edit Team Member</h3>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label class="form-label">Full Name:</label>
+                                        <input type="text" value="Sr. Angelita M. Baraero, O.S.A." class="form-input">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Position:</label>
+                                        <input type="text" value="College President" class="form-input">
+                                    </div>
+                                    <div class="form-group form-group-full member-image-preview-container" style="display: none;">
+                                        <img src="" alt="Member Image Preview" class="member-image-preview" style="max-height: 150px; margin-bottom: 1rem; border-radius: 0.25rem;">
+                                    </div>
+                                    <div class="form-group form-group-full">
+                                        <label class="form-label">Image:</label>
+                                        <input type="file" class="form-input-file member-image-input" accept="image/*">
+                                    </div>
+                                    <div class="form-group form-group-full">
+                                        <label class="form-label">Description:</label>
+                                        <textarea rows="3" class="form-textarea">With a vision for transformative education...</textarea>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button class="btn btn-success">Save Changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Academics Page -->
+                    <div data-page="academics" class="page-content">
+                        <h2 class="page-title">Manage Academic Programs</h2>
+                        
+                        <!-- Senior High Card -->
+                        <div class="card">
+                            <div class="card-title-actions">
+                                <h3 class="card-header">Senior High School Strands</h3>
+                                <button id="add-strand-btn" class="btn btn-success">
+                                    <i class="fas fa-plus btn-icon"></i> Add Strand
+                                </button>
+                            </div>
+                            <div id="strand-list" class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <p class="accordion-title">STEM: Science, Technology, Engineering, and Mathematics</p>
+                                        <div>
+                                            <button class="btn-edit" title="Edit Strand"><i class="fas fa-pencil-alt"></i></button>
+                                            <button class="btn-delete" title="Delete Strand"><i class="fas fa-trash-alt"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-grid">
+                                        <div class="form-group">
+                                            <label class="form-label-sm">Strand Name:</label>
+                                            <input type="text" value="STEM: Science, Technology, Engineering, and Mathematics" class="form-input form-input-sm">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label-sm">Description:</label>
+                                            <textarea class="form-textarea form-textarea-sm" rows="3">The STEM strand is designed for students who are inclined towards the hard sciences. This track provides a strong foundation for careers in scientific research, healthcare, technology, and engineering.</textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label-sm">Key Subjects (one per line):</label>
+                                            <textarea class="form-textarea form-textarea-sm" rows="4">Calculus
+Physics
+Biology
+Chemistry
+Research/Capstone Project</textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label-sm">Career Paths (one per line):</label>
+                                            <textarea class="form-textarea form-textarea-sm" rows="4">Engineer
+Doctor
+Scientist
+Architect
+Programmer</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button class="btn btn-success">Save SHS Changes</button>
+                            </div>
+                        </div>
+
+                        <!-- College Programs Card -->
+                        <div class="card">
+                            <div class="card-title-actions">
+                                <h3 class="card-header">College Programs</h3>
+                                <button id="add-program-btn" class="btn btn-success">
+                                    <i class="fas fa-plus btn-icon"></i> Add Program
+                                </button>
+                            </div>
+                            <div id="program-list" class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <p class="accordion-title">College of Education</p>
+                                        <div>
+                                            <button class="btn-edit" title="Edit Program"><i class="fas fa-pencil-alt"></i></button>
+                                            <button class="btn-delete" title="Delete Program"><i class="fas fa-trash-alt"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-grid">
+                                        <div class="form-group">
+                                            <label class="form-label-sm">Program Name:</label>
+                                            <input type="text" value="Education" class="form-input form-input-sm">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label-sm">Font Awesome Icon:</label>
+                                            <input type="text" value="fa-solid fa-chalkboard-user" class="form-input form-input-sm">
+                                        </div>
+                                        <div class="form-group form-group-full">
+                                            <label class="form-label-sm">Description:</label>
+                                            <textarea class="form-textarea form-textarea-sm" rows="3">The College of Education is committed to developing competent and compassionate educators...</textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label-sm">Courses / Majors (one per line):</label>
+                                            <textarea rows="5" class="form-textarea form-textarea-sm">Bachelor in Elementary Education (BEED)
+Bachelor in Secondary Education (BSED)</textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label-sm">Key Subjects (one per line):</label>
+                                            <textarea rows="5" class="form-textarea form-textarea-sm">Facilitating Learning
+Assessment of Student Learning
+Curriculum Development</textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label-sm">Potential Career Paths (one per line):</label>
+                                            <textarea rows="5" class="form-textarea form-textarea-sm">Classroom Teacher
+School Administrator
+Curriculum Developer</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button class="btn btn-success">Save College Programs</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Campus Life Page -->
+                    <div data-page="campus-life" class="page-content">
+                        <h2 class="page-title">Manage Campus Life Cards</h2>
+                        <div class="card-grid">
+                            <div class="card">
+                                <h4 class="card-title-sm">Parent-Teacher Conferences</h4>
+                                <img src="https://cloud-1de12d.b-cdn.net/media/iW=584&iH=584&oX=24&oY=24&cW=536&cH=536/e7f2c5e56e11e6e599ae5b0ca3570ce5/image.jpg" class="card-img">
+                                <input type="file" class="form-input-file">
+                                <label class="form-label-sm">Description:</label>
+                                <textarea rows="2" class="form-textarea form-textarea-sm">Fostering strong partnerships between parents and teachers for student success.</textarea>
+                                <div class="form-actions">
+                                     <button class="btn btn-primary btn-sm">Save</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h4 class="card-title-sm">Science Laboratories</h4>
+                                <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?q=80&w=2070&auto=format&fit=crop" class="card-img">
+                                <input type="file" class="form-input-file">
+                                <label class="form-label-sm">Description:</label>
+                                <textarea rows="2" class="form-textarea form-textarea-sm">State-of-the-art labs for hands-on experience and discovery.</textarea>
+                                 <div class="form-actions">
+                                     <button class="btn btn-primary btn-sm">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Page -->
+                    <div data-page="services" class="page-content">
+                        <div class="page-header">
+                            <h2 class="page-title">Manage Service Cards</h2>
+                            <button id="add-service-btn" class="btn btn-primary">
+                                <i class="fas fa-plus btn-icon"></i> Add New Service
+                            </button>
+                        </div>
+                        <div id="service-list" class="card-grid">
+                            <div class="card">
+                                <h4 class="card-title-sm">Academic Advising</h4>
+                                <div class="form-group">
+                                    <label class="form-label-sm">Font Awesome Icon Class:</label>
+                                    <input type="text" value="fa-solid fa-user-graduate" class="form-input form-input-sm">
+                                </div>
+                                <label class="form-label-sm">Description:</label>
+                                <textarea rows="3" class="form-textarea form-textarea-sm">Personalized guidance to help students navigate their academic journey, from course selection to career planning.</textarea>
+                                <div class="form-actions">
+                                     <button class="btn btn-primary btn-sm">Save</button>
+                                     <button class="btn btn-danger btn-sm btn-delete-service">Delete</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h4 class="card-title-sm">Library & E-Resources</h4>
+                                <div class="form-group">
+                                    <label class="form-label-sm">Font Awesome Icon Class:</label>
+                                    <input type="text" value="fa-solid fa-book-open-reader" class="form-input form-input-sm">
+                                </div>
+                                <label class="form-label-sm">Description:</label>
+                                <textarea rows="3" class="form-textarea form-textarea-sm">Access a vast collection of books, journals, and digital resources to support cutting-edge research and learning.</textarea>
+                                <div class="form-actions">
+                                     <button class="btn btn-primary btn-sm">Save</button>
+                                     <button class="btn btn-danger btn-sm btn-delete-service">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Settings Page -->
+                    <div data-page="settings" class="page-content">
+                        <h2 class="page-title">Site Settings</h2>
+                        <div class="card">
+                            <h3 class="card-header">Contact Information</h3>
+                             <div class="form-grid-half">
+                                <div class="form-group">
+                                    <label class="form-label">Telephone:</label>
+                                    <input type="text" value="8287-1013 / 8289-6156" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Cellphone:</label>
+                                    <input type="text" value="0966-549-4493" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email:</label>
+                                    <input type="email" value="lacoco_rdo@yahoo.com.ph" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Address:</label>
+                                    <input type="text" value="St. Peter St. Villa Maria Subd., Deparo, Novaliches, Caloocan, Philippines" class="form-input">
+                                </div>
+                             </div>
+                             <div class="form-actions">
+                                <button class="btn btn-success">Save Contact Info</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-header">School Hours</h3>
+                             <div class="form-grid-half">
+                                <div class="form-group">
+                                    <label class="form-label">Monday:</label>
+                                    <input type="text" value="8:00 AM - 5:00 PM" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Tuesday:</label>
+                                    <input type="text" value="8:00 AM - 5:00 PM" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Wednesday:</label>
+                                    <input type="text" value="8:00 AM - 5:00 PM" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Thursday:</label>
+                                    <input type="text" value="8:00 AM - 5:00 PM" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Friday:</label>
+                                    <input type="text" value="8:00 AM - 5:00 PM" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Saturday:</label>
+                                    <input type="text" value="8:00 AM - 12:00 PM" class="form-input">
+                                </div>
+                                 <div class="form-group">
+                                    <label class="form-label">Sunday:</label>
+                                    <input type="text" value="CLOSED" class="form-input">
+                                </div>
+                             </div>
+                             <div class="form-actions">
+                                <button class="btn btn-success">Save School Hours</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                             <div class="card-title-actions">
+                                <h3 class="card-header">Social Media</h3>
+                                <button id="add-social-link-btn" class="btn btn-success">
+                                    <i class="fas fa-plus btn-icon"></i> Add Link
+                                </button>
+                            </div>
+                            <div id="social-links-list">
+                                <div class="social-link-item">
+                                    <div class="form-group">
+                                        <label class="form-label-sm">URL:</label>
+                                        <input type="url" value="https://www.facebook.com/share/196Pg1jWn7/" class="form-input form-input-sm">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label-sm">Icon Class (e.g., fab fa-facebook):</label>
+                                        <input type="text" value="fab fa-facebook" class="form-input form-input-sm">
+                                    </div>
+                                    <button class="btn-delete btn-delete-social" title="Delete Link"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </div>
+                             <div class="form-actions">
+                                <button class="btn btn-success">Save Social Links</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- News Article Modal -->
+    <div id="news-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="news-modal-title" class="modal-title">Add New Article</h3>
+                <button id="news-modal-close" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="news-form">
+                    <div class="form-group">
+                        <label for="article-title" class="form-label">Title:</label>
+                        <input type="text" id="article-title" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="article-desc" class="form-label">Description:</label>
+                        <textarea id="article-desc" rows="4" class="form-textarea"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="article-img-link" class="form-label">Image Link:</label>
+                        <input type="url" id="article-img-link" class="form-input" placeholder="https://example.com/image.jpg">
+                    </div>
+                     <div class="form-group">
+                        <label for="article-img-upload" class="form-label">Or Upload Image:</label>
+                        <input type="file" id="article-img-upload" class="form-input-file" accept="image/*">
+                    </div>
+                    <div class="form-grid-half">
+                        <div class="form-group">
+                            <label for="article-date" class="form-label">Date Published:</label>
+                            <input type="date" id="article-date" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="article-status" class="form-label">Status:</label>
+                            <select id="article-status" class="form-input">
+                                <option value="published">Published</option>
+                                <option value="draft">Draft</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="news-modal-cancel" class="btn btn-secondary">Cancel</button>
+                <button id="news-modal-save" class="btn btn-success">Save Article</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Link to the JS file -->
+    <script src="admin.js"></script>
+</body>
+</html>
