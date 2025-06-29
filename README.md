@@ -85,8 +85,8 @@ A secure panel for authorized staff to manage website content:
 
 **La Consolacion College Novaliches**  
 📍 Novaliches, Caloocan, Philippines  
-📞 Phone: *(Insert contact number here)*  
-📧 Email: *(Insert email here)*  
+📞 Phone: *0966-549-4493*  
+📧 Email: *lacoco_rdo@yahoo.com.ph*  
 
 ---
 
