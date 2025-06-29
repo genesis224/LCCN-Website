@@ -5,7 +5,18 @@ This site acts as a digital hub for students, parents, and the general public, s
 
 ---
 
+## 🚧 Project Status
+
+> ⚠️ **Notice:** This project is still **in development**.  
+> The current version is a **static website** — it does not yet include backend functionality, databases, or dynamic content handling.  
+> Future updates aim to implement full dynamic features such as:
+> - User authentication
+> - Content management with a backend server
+> - Database integration for storing articles, team data, and programs
+> - Secure admin login system
 ## 🌐 Website Features
+
+---
 
 ### 🏫 About Us
 - 📜 School history
